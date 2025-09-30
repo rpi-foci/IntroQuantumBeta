@@ -1,4 +1,4 @@
-Introduction to Quantum Computing Workshop
+# Introduction to Quantum Computing Workshop
 
 This is the Beta version of a Workshop to step participants through
 running their first program on a quantum computer.  In this workshop,
