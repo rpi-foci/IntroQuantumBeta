@@ -9,18 +9,28 @@ This is the Beta version of a Workshop to step participants through
 running their first program on a quantum computer.  In this workshop,
 we will:
 
-   1) Create a gBraid account (if needed).
-   2) Launch qBraid from this GitHub repository
-   3) Log on to IBM's Quantum Cloud
-   4) Load the runtime Jupyter lab, and configure the Qiskit Runtime
-   5) Load HelloBell Jupyter lab and run a simple measurement of a Bell state
-   6) Run the same program, but with unentangled qubits
-   7) Discuss and compare results
+   * Request access to RPI's Quantum System One (if needed), and create an IBM Quantum Cloud account
+   * Create a gBraid account (if needed)
+   * Open qBraid from this GitHub repository
+   * Launch Jupyter Labs, and install the course's kernel
+   * Load the runtime Jupyter lab, and configure the Qiskit Runtime
+   * Load HelloBell Jupyter lab and run a simple measurement of a Bell state
+   * Run the same program, but with unentangled qubits
+   * Discuss and compare results
+   * Optionally install miniconda and Qiskit locally
 
 For those interested, and time permitting, instructions for a local installation
 of Python (miniconda), and Qiskit are provided.
 
-## Log in to qBraid
+## Request an IBM Quantum Cloud (quantum computer) account
+
+If you do not already have a quantum computer account,
+[request one](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request)
+
+Accept the invitation link, and create your IBM Quantum Cloud Account.  Information needed
+for the Qiskit Runtime is found there.
+
+## Create a qBraid account, and logon to qBraid
 
 Before launching qBraid, create a qBraid account at [https://www.qbraid.com](https://www.qbraid.com).  This can
 be created using your RPI email address, or another address.  If you already have a qBraid account login.
@@ -33,15 +43,12 @@ This will launch qBraid.  *Note, you may want to launch in a separate tab or win
 
 qBraid will take a few moments cloning the git repository and setting up your workspace.
 
-## Open these files in qBraid
+## Launch Jupyter Lab and Install the Course's kernel
 
-Along the bottom of your qBraid screen you will see some files and folders.  Click the folder
-labeled "IntroQuantumBeta".   This will open a launch window on the right.
+Under Launch Lab, select the "Default Workspace", and click "Next".
 
-Select the "Free 2vCPU 4GB RAM" option, and launch the lab.  Note this might take awhile to start,
-and you may need to launch the started lab under "Launch Lab".
-
-## Load the lab's Python Kernel
+Select "Free 2vCPU 4GB Ram".  You may have to start the
+lab, or it may already be running.  Click the "Launch Lab" button.
 
 Once the lab is launched, EWS tab on the upper right corner.  This will show the Default kernel,
 and the "RPI Quantum Computing Workshop" kernel.
@@ -49,11 +56,19 @@ and the "RPI Quantum Computing Workshop" kernel.
 Click the drop down for the RPI kernel, and add it.  This will load the required Python packages,
 including Qiskit.
 
+Note the "+ ADD" link at the top can be used to add more environments, such as PennyLane.
+
+## Open Class Lab Folder
+
+On the left side of Jupyter Lab there should be a "IntroQuantumBeta" folder. Double-click it.
+
 ## Configure Qiskit Runtime
 
-Click "Runtime.ipynb" on the left.  This will open the Jupyter lab.  On the top right of the
-lab is the current Python kernel.  Make sure it is: "Python 3 [rpi-quantum-comp]"  If not, click
-and select the kernel.
+Double-click "Runtime.ipynb" on the left.  This will open the Jupyter lab.
+
+On the top right of the lab is the current Python kernel.  Make sure
+it is: "Python 3 [rpi-quantum-comp]" If not, click and select the
+kernel course's kernel.
 
 Follow the lab for instructions on configuring the Qiskit runtime.
 
@@ -63,6 +78,12 @@ After the runtime is configured, click on "HelloBell.ipynb".  Ensure the "rpi-qu
 being used.
 
 Follow the instructions in the lab to run (your first?) quantum computer program on RPI's Quantum System One.
+
+## Install Python and Qiskit Locally
+
+qBraid hosts a Jupyter Hub, a Jupyter Lab for running Python programs.  But you can install Python,
+Jupyter Lab, and Qiskit locally on your laptop or desktop.  The "LocalPython.ipnb" file provides
+(an outline) of instructions.
 
 
 This repository is:
