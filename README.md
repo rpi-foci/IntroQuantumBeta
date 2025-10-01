@@ -1,89 +1,105 @@
-<!-- [<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/rpi-foci/IntroQuantumBeta.git) -->
-
-[![Env Badge](https://img.shields.io/endpoint?url=https://api.qbraid.com/api/environments/valid?envSlug=rpi_qu_8b7d9z&label=Launch+on+qBraid&labelColor=lightgrey&logo=rocket&logoSize=auto&style=for-the-badge)](http://account.qbraid.com?gitHubUrl=https://github.com/rpi-foci/IntroQuantumBeta.git&envId=rpi_qu_8b7d9z)
-
-
 # Introduction to Quantum Computing Workshop
 
 This is the Beta version of a Workshop to step participants through
 running their first program on a quantum computer.  In this workshop,
 we will:
 
-   * Request access to RPI's Quantum System One (if needed), and create an IBM Quantum Cloud account
-   * Create a gBraid account (if needed)
+   * Request access to RPI's Quantum System One, and create an IBM Quantum Cloud account
+   * Create a gBraid account and logon
    * Open qBraid from this GitHub repository
    * Launch Jupyter Labs, and install the course's kernel
-   * Load the runtime Jupyter lab, and configure the Qiskit Runtime
-   * Load HelloBell Jupyter lab and run a simple measurement of a Bell state
+   * Configure the Qiskit Runtime
+   * Run HelloBell to measure a Bell State on the quantum computer
    * Run the same program, but with unentangled qubits
    * Discuss and compare results
    * Optionally install miniconda and Qiskit locally
 
-For those interested, and time permitting, instructions for a local installation
-of Python (miniconda), and Qiskit are provided.
+This lab uses a hosted Jupyter Lab.  Time permitting, there are instructions for a local installation
+of Python (miniconda), and Qiskit.
 
-## Request an IBM Quantum Cloud (quantum computer) account
+
+## Request to RPI's Quantum System One
 
 If you do not already have a quantum computer account,
-[request one](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request)
+[request one now](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request).
 
-Accept the invitation link, and create your IBM Quantum Cloud Account.  Information needed
-for the Qiskit Runtime is found there.
+Accept the emailed invitation link, and create your [IBM Quantum Cloud[(https://quantum.cloud.ibm.com).
+Information needed for the Qiskit Runtime is found there.
+
 
 ## Create a qBraid account, and logon to qBraid
 
-Before launching qBraid, create a qBraid account at [https://www.qbraid.com](https://www.qbraid.com).  This can
-be created using your RPI email address, or another address.  If you already have a qBraid account login.
+If you have not already done so create a qBraid account at [https://www.qbraid.com](https://www.qbraid.com).  This can
+be created using your RPI email address, or another address.  **Do not use your RPI password.**
+
+Logon to qBraid.
+
 
 ## Launch qBraid
 
-Click the "LAUNCH ON QBRAID|RPI QUANTUM COMPUTER WORKSHOP" button.
+Click the:
 
-This will launch qBraid.  *Note, you may want to launch in a separate tab or window to keep these instructions.*
+<!-- [<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/rpi-foci/IntroQuantumBeta.git) -->
 
-qBraid will take a few moments cloning the git repository and setting up your workspace.
+[![Env Badge](https://img.shields.io/endpoint?url=https://api.qbraid.com/api/environments/valid?envSlug=rpi_qu_8b7d9z&label=Launch+on+qBraid&labelColor=lightgrey&logo=rocket&logoSize=auto&style=for-the-badge)](http://account.qbraid.com?gitHubUrl=https://github.com/rpi-foci/IntroQuantumBeta.git&envId=rpi_qu_8b7d9z)
+
+button.
+
+This will launch qBraid.  **Note, you may want to launch in a separate tab or window to keep these instructions.**
+
+qBraid will take a few moments setting up your workspace, and cloning this Git repository.
+
 
 ## Launch Jupyter Lab and Install the Course's kernel
 
-Under Launch Lab, select the "Default Workspace", and click "Next".
+Once qBraid is ready:
 
-Select "Free 2vCPU 4GB Ram".  You may have to start the
-lab, or it may already be running.  Click the "Launch Lab" button.
+Under ``Launch Lab'' select the ``Default Workspace'' and click ``Next >''.
 
-Once the lab is launched, EWS tab on the upper right corner.  This will show the Default kernel,
-and the "RPI Quantum Computing Workshop" kernel.
+Select ``Free 2vCPU 4GB Ram''.  You may have to start the
+lab, or it may already be running.  Click the ``Launch Lab'' button.
 
-Click the drop down for the RPI kernel, and add it.  This will load the required Python packages,
+Once the lab is launched click the EWS tab on the upper right corner.  This will show the Default kernel,
+and the ``RPI Quantum Computing Workshop'' kernel.
+
+Click the drop down for the RPI kernel, and ``Add'' it.  This will load the required Python packages,
 including Qiskit.
 
-Note the "+ ADD" link at the top can be used to add more environments, such as PennyLane.
+While we will not be doing this today, the ``+ ADD'' link at the top can be used to add more environments, such as PennyLane.
+
 
 ## Open Class Lab Folder
 
-On the left side of Jupyter Lab there should be a "IntroQuantumBeta" folder. Double-click it.
+On the left side of Jupyter Lab there should be a ``IntroQuantumBeta'' folder. Double-click it.
+
 
 ## Configure Qiskit Runtime
 
-Double-click "Runtime.ipynb" on the left.  This will open the Jupyter lab.
+We are now ready to do some programming.
 
-On the top right of the lab is the current Python kernel.  Make sure
+Double-click ``Runtime.ipynb'' lab on the left.
+
+On the top right of the lab page the current Python kernel name is displayed.  Make sure
 it is: "Python 3 [rpi-quantum-comp]" If not, click and select the
-kernel course's kernel.
+course's kernel.
 
-Follow the lab for instructions on configuring the Qiskit runtime.
+Follow the lab for instructions on configuring the Qiskit runtime.  This will require both an API token,
+and a Cloud Resource Name (CRN) from [IBM Quantum Cloud](https://quantum.cloud.ibm.com).
+
 
 ## Run the HellBell program
 
-After the runtime is configured, click on "HelloBell.ipynb".  Ensure the "rpi-quantum-comp" kernel is
+After the runtime is configured, open "HelloBell.ipynb" (listed on the left).  Ensure the "rpi-quantum-comp" kernel is
 being used.
 
 Follow the instructions in the lab to run (your first?) quantum computer program on RPI's Quantum System One.
 
+
 ## Install Python and Qiskit Locally
 
 qBraid hosts a Jupyter Hub, a Jupyter Lab for running Python programs.  But you can install Python,
-Jupyter Lab, and Qiskit locally on your laptop or desktop.  The "LocalPython.ipnb" file provides
-(an outline) of instructions.
+Jupyter Lab, and Qiskit locally on your laptop or desktop.  The ``LocalPython.ipynb'' file provides
+(an outline (of rudimentary)) instructions.
 
 
 This repository is:
