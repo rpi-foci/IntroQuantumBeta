@@ -26,6 +26,10 @@ If you do not already have a quantum computer account,
 Accept the emailed invitation link, and create your [IBM Quantum Cloud](https://quantum.cloud.ibm.com).
 Information needed for the Qiskit Runtime is found there.  **Do not use your RPI password.**
 
+**Important Note:** IBM's Cloud services support many vendors.  It is possible after logging in you default to
+the hosted service of a previous vendor (such as RedHat).   Check the drop-down menu on the middle top.  It
+should say ``Renssealer Polytechnic Institute''.
+
 
 ## Create a qBraid account, and logon to qBraid
 
