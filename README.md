@@ -23,8 +23,8 @@ of Python (miniconda), and Qiskit.
 If you do not already have a quantum computer account,
 [request one now](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request).
 
-Accept the emailed invitation link, and create your [IBM Quantum Cloud[(https://quantum.cloud.ibm.com).
-Information needed for the Qiskit Runtime is found there.
+Accept the emailed invitation link, and create your [IBM Quantum Cloud](https://quantum.cloud.ibm.com).
+Information needed for the Qiskit Runtime is found there.  **Do not use your RPI password.**
 
 
 ## Create a qBraid account, and logon to qBraid
