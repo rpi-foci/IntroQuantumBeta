@@ -58,9 +58,9 @@ qBraid will take a few moments setting up your workspace, and cloning this Git r
 
 Once qBraid is ready:
 
-Under ``Launch Lab'' select the ``Default Workspace'' and click ``Next >''.
+Under **Launch Lab** select the ``Default Workspace'' and click ``Next >''.
 
-Select ``Free 2vCPU 4GB Ram''.  You may have to start the
+Select *Free 2vCPU 4GB Ram*.  You may have to start the
 lab, or it may already be running.  Click the ``Launch Lab'' button.
 
 Once the lab is launched click the EWS tab on the upper right corner.  This will show the Default kernel,
