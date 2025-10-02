@@ -18,7 +18,7 @@ This lab uses a hosted Jupyter Lab.  Time permitting, there are instructions for
 of Python (miniconda), and Qiskit.
 
 
-## Request to RPI's Quantum System One
+## Request Access to RPI's Quantum System One
 
 If you do not already have a quantum computer account,
 [request one now](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request).
@@ -49,7 +49,7 @@ Click the:
 
 button.
 
-This will launch qBraid.  **Note, you may want to launch in a separate tab or window to keep these instructions.**
+This will launch qBraid.  **Note: launch in a separate tab or window to keep these instructions available.**
 
 qBraid will take a few moments setting up your workspace, and cloning this Git repository.
 
@@ -63,7 +63,7 @@ Under **Launch Lab** select the *Default Workspace* and click ``Next >''.
 Select *Free 2vCPU 4GB Ram*.  You may have to start the
 lab, or it may already be running.  Click the ``Launch Lab'' button.
 
-Once the lab is launched click the EWS tab on the upper right corner.  This will show the Default kernel,
+Once the lab is launched click the *EWS* tab on the upper right corner.  This will show the Default kernel,
 and the ``RPI Quantum Computing Workshop'' kernel.
 
 Click the drop down for the RPI kernel, and ``Add'' it.  This will load the required Python packages,
@@ -75,6 +75,8 @@ While we will not be doing this today, the ``+ ADD'' link at the top can be used
 ## Open Class Lab Folder
 
 On the left side of Jupyter Lab there should be a ``IntroQuantumBeta'' folder. Double-click it.
+
+If you don't see the folder, click the *Files* tab to view files.
 
 
 ## Configure Qiskit Runtime
