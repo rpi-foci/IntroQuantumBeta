@@ -4,27 +4,31 @@ This is the Beta version of a Workshop to step participants through
 running their first program on a quantum computer.  In this workshop,
 we will:
 
-   * Request access to RPI's Quantum System One, and create an IBM Quantum Cloud account
+   * Log on to RPI's IBM Quantum Cloud Account using Single Sign-On, and request access to Quantum System One
    * Create a gBraid account and logon
+   * Or, Install miniconda and Qiskit locally
    * Open qBraid from this GitHub repository
+   * Or, Download programs from GitHub
    * Launch Jupyter Labs, and install the course's kernel
    * Configure the Qiskit Runtime
    * Run HelloBell to measure a Bell State on the quantum computer
    * Run the same program, but with unentangled qubits
    * Discuss and compare results
-   * Optionally install miniconda and Qiskit locally
 
 This lab uses a hosted Jupyter Lab.  Time permitting, there are instructions for a local installation
 of Python (miniconda), and Qiskit.
 
 
-## Request Access to RPI's Quantum System One
+## Log on to RPI's IBM Quantum Cloud Account using Single Sign-On, and request access to Quantum System One
 
-If you do not already have a quantum computer account,
-[request one now](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request).
+Log on to RPI's IBM Quantum Cloud Account using [Single Sign-On](https://go.rpi.edu/quantum-login).
 
-Accept the emailed invitation link, and create your [IBM Quantum Cloud](https://quantum.cloud.ibm.com).
-Information needed for the Qiskit Runtime is found there.  **Do not use your RPI password.**
+If it is your first login you will be directed to fill out the access request form and agree to the conditions of use statements. [Request Access to RPI's Quantum System One](https://webforms.rpi.edu/form/rpi-quantum-hub-access-request)
+
+These links are also on the Quantum RPI page](https://quantum.rpi.edu).
+
+If you may already have access [IBM Quantum Cloud](https://quantum.cloud.ibm.com) you can use that for now.
+Previous cloud accounts will continue to work until Summer of 2026.
 
 **Important Note:** IBM's Cloud services support many vendors.  It is possible after logging in you default to
 the hosted service of a previous vendor (such as RedHat).   Check the drop-down menu on the middle top.  It
@@ -33,8 +37,9 @@ should say ``Renssealer Polytechnic Institute''.
 
 ## Create a qBraid account, and logon to qBraid
 
-If you have not already done so create a qBraid account at [https://www.qbraid.com](https://www.qbraid.com).  This can
-be created using your RPI email address, or another address.  **Do not use your RPI password.**
+If you are using the qBraid option, and have not already created an account do so now.
+The account can be create at [https://www.qbraid.com](https://www.qbraid.com).  You can use your RPI email address, but
+**Do not use your RPI password.**  At some future date we hope to have qBraid integrated with Single Sign-On.
 
 Logon to qBraid.
 
